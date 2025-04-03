@@ -3,6 +3,10 @@
 * For detailed execution commands, see [run_hw2.ipynb].
 
 ## Note
+* Implemented algorithms:
+  * [x] Policy Gradient (with value function)
+  * [x] GAE (Generalized Advantage Estimation)
+
 ## Result
 
 
