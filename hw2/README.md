@@ -33,6 +33,7 @@
        <img src="results/exp2_bgs-blr eval.png" width="45%" />
        <img src="results/exp2_bgs-blr loss.png" width="45%" />
       </div>
+      
       The default setting of baseline is: `bgs=5, blr=0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
     * Without NA vs. NA
       <div>
@@ -45,13 +46,42 @@
     |![exp2]           |
 * Experiment 3 (LunarLander)
   * Learning curves
+    * Comparison of λ
+      <div>
+       <img src="results/exp3.png" width="45%"/>
+      </div>
   * Evaluation rollouts
-* Experiment 4 (InvertedPendulum)
+    | λ = 0.98         |
+    |:----------------:|
+    |![exp3]           |
+* Experiment 4 (InvertedPendulum)  
+  Use tuned hyperparemeters:
+  ```python
+  baseline_gradient_steps = 10
+  gae_lambda = 0.98
+  batch_size = 300
+  discount = 0.99
+  ```
   * Learning curves
+    * Performance of tuned hyperparameters
+      <div>
+       <img src="results/exp4_tuned.png" width="45%" />
+      </div>
+    * Tuned vs. Default Hyperparameters
+      <div>
+       <img src="results/exp4_compare.png" width="45%" />
+      </div>
   * Evaluation rollouts
+    | tuned, s2        |
+    |:----------------:|
+    |![exp4]           |
 * Experiment 5 (Humanoid)
-  * Learning curves
-  * Evaluation rollouts
+  * Learning curves (smoothing: 0.85)
+    <div>
+     <img src="results/exp5.png" width="45%" />
+    </div>
+  * Evaluation rollouts  
+    ![exp5]
 
 
 
@@ -62,3 +92,6 @@
 [exp1]: results/exp1_pg_cartpole_rtg_na.gif
 [exp1_lb]: results/exp1_pg_cartpole_lb_rtg_na.gif
 [exp2]: results/exp2_pg_cheetah_baseline_na.gif
+[exp3]: results/exp3_pg_lunarlander_lambda0.98.gif
+[exp4]: results/exp4_pg_pendulum_tuned_s2.gif
+[exp5]: results/exp5_pg_humanoid.gif
