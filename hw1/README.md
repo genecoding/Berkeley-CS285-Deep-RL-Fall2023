@@ -32,9 +32,9 @@
   |![bc_ant]         |![da_ant]          |
   |![bc_halfcheetah] |![da_halfcheetah]  |
   |![bc_hopper]      |![da_hopper]       |
-  |![bc_wakler2d]    |![da_wakler2d]     |
+  |![bc_walker2d]    |![da_walker2d]     |
 
-![da_wakler2d]
+
 
 [instruction]: instruction.md
 [installation]: installation.md
@@ -43,8 +43,8 @@
 [bc_ant]: results/bc_ant.gif
 [bc_halfcheetah]: results/bc_halfcheetah.gif
 [bc_hopper]: results/bc_hopper.gif
-[bc_wakler2d]: results/bc_wakler2d.gif
+[bc_walker2d]: results/bc_walker2d.gif
 [da_ant]: results/da_ant.gif
 [da_halfcheetah]: results/da_halfcheetah.gif
 [da_hopper]: results/da_hopper.gif
-[da_wakler2d]: results/da_wakler2d.gif
+[da_walker2d]: results/da_walker2d.gif
