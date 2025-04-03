@@ -48,7 +48,7 @@
   * Learning curves
     * Comparison of λ
       <div>
-       <img src="results/exp3.png" width="45%"/>
+       <img src="results/exp3.png" width="55%"/>
       </div>
   * Evaluation rollouts
     | λ = 0.98         |
@@ -65,11 +65,11 @@
   * Learning curves
     * Performance of tuned hyperparameters
       <div>
-       <img src="results/exp4_tuned.png" width="45%" />
+       <img src="results/exp4_tuned.png" width="55%" />
       </div>
     * Tuned vs. Default Hyperparameters
       <div>
-       <img src="results/exp4_compare.png" width="45%" />
+       <img src="results/exp4_compare.png" width="55%" />
       </div>
   * Evaluation rollouts
     | tuned, s2        |
@@ -78,7 +78,7 @@
 * Experiment 5 (Humanoid)
   * Learning curves (smoothing: 0.85)
     <div>
-     <img src="results/exp5.png" width="45%" />
+     <img src="results/exp5.png" width="55%" />
     </div>
   * Evaluation rollouts  
     ![exp5]
