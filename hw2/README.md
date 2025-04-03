@@ -13,8 +13,8 @@
     * Small Batch vs. Large Batch  
       (x-axis: environment steps)
       <div>
-       <img src="results/exp1.png" width="45%" />
-       <img src="results/exp1_lb.png" width="45%" />
+       <img src="results/exp1.png" width="48%" />
+       <img src="results/exp1_lb.png" width="48%" />
       </div>
   * Evaluation rollouts  
     (both with rtg & na)
@@ -25,20 +25,20 @@
   * Learning curves
     * Without Baseline vs. Baseline
       <div>
-       <img src="results/exp2_baseline eval.png" width="45%" />
-       <img src="results/exp2_baseline loss.png" width="45%" />
+       <img src="results/exp2_baseline eval.png" width="48%" />
+       <img src="results/exp2_baseline loss.png" width="48%" />
       </div>
     * Comparison of decreased bgs & blr
       <div>
-       <img src="results/exp2_bgs-blr eval.png" width="45%" />
-       <img src="results/exp2_bgs-blr loss.png" width="45%" />
+       <img src="results/exp2_bgs-blr eval.png" width="48%" />
+       <img src="results/exp2_bgs-blr loss.png" width="48%" />
       </div>
       
       The default setting of baseline is: `bgs=5, blr=0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
     * Without NA vs. NA
       <div>
-       <img src="results/exp2_na eval.png" width="45%" />
-       <img src="results/exp2_na loss.png" width="45%" />
+       <img src="results/exp2_na eval.png" width="48%" />
+       <img src="results/exp2_na loss.png" width="48%" />
       </div>
   * Evaluation rollouts
     | baseline + na    |
