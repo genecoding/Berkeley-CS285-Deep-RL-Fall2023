@@ -34,7 +34,7 @@
   |![bc_hopper]      |![da_hopper]       |
   |![bc_wakler2d]    |![da_wakler2d]     |
 
-
+![da_wakler2d]
 
 [instruction]: instruction.md
 [installation]: installation.md
