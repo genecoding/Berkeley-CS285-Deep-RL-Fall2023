@@ -67,7 +67,7 @@
       <div>
        <img src="results/exp4_tuned.png" width="55%" />
       </div>
-    * Tuned vs. Default Hyperparameters
+    * Default vs. Tuned Hyperparameters
       <div>
        <img src="results/exp4_compare.png" width="55%" />
       </div>
