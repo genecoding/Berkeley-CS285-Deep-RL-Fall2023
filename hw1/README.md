@@ -18,10 +18,10 @@
 ## Result
 * Learning curves
   * Grid search  
-    (x-axis: second)  
+    (x-axis: seconds)  
     <img src="results/grid search.png" width="45%" />
   * Behavior Cloning vs. DAgger (including the performance of the agent vs. the expert)  
-    (x-axis: iteration)  
+    (x-axis: iterations)  
     <div>
      <img src="results/eval.png" width="45%" />
      <img src="results/train.png" width="45%" />
