@@ -6,33 +6,33 @@
 * Implemented algorithms:
   * [x] Behavior Cloning
   * [x] DAgger (Dataset Aggregation)
-* I do 3.2 first, do grid search on Ant and select a set of hyperparameters and run on all four tasks with BC and DA. Although the homework       only ask us to choose two of four, I just try all of them.
+* I do 3.2 first, do grid search on Ant and select a set of hyperparameters, apply to both BC and DA, and run on all four tasks. Although the homework only ask us to choose two of four, I just try all of them.
 * Use hyperparameters:
   ```python
   num_agent_train_steps_per_iter = 10000
   train_batch_size = 200
   size = 64
   ```
-  `num_agent_train_steps_per_iter = 10000` is a little bit overkill, just for evaluation of all tasks can achieve at least 30% of the             performance of the expert. ：P
+  `num_agent_train_steps_per_iter = 10000` is a little bit overkill, just for evaluation of all tasks can achieve at least 30% of the performance of the expert. ：P
 
 ## Result
 * Learning curves
   * Grid search  
     (x-axis: second)  
     <img src="results/grid search.png" width="45%" />
-  * Behavior Cloning vs. DAgger (including the eval of the trained agent vs. the performance of the expert)  
+  * Behavior Cloning vs. DAgger (including the performance of the agent vs. the expert)  
     (x-axis: iteration)  
     <div>
      <img src="results/eval.png" width="45%" />
      <img src="results/train.png" width="45%" />
     </div>
 * Evaluation rollouts
-  | Behavior Cloning | DAgger            |
-  |:----------------:|:-----------------:|
-  |![bc_ant]         |![da_ant]          |
-  |![bc_halfcheetah] |![da_halfcheetah]  |
-  |![bc_hopper]      |![da_hopper]       |
-  |![bc_walker2d]    |![da_walker2d]     |
+  |                  | Behavior Cloning | DAgger            |
+  |:-----------------|:----------------:|:-----------------:|
+  | Ant              |![bc_ant]         |![da_ant]          |
+  | HalfCheetah      |![bc_halfcheetah] |![da_halfcheetah]  |
+  | Hopper           |![bc_hopper]      |![da_hopper]       |
+  | Walker2d         |![bc_walker2d]    |![da_walker2d]     |
 
 
 
