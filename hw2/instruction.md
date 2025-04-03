@@ -20,4 +20,4 @@ There are TODOs in these files:
 - `cs285/networks/critics.py`
 - `cs285/infrastructure/utils.py`
 
-See the [Assignment PDF]([hw2.pdf](https://rail.eecs.berkeley.edu/deeprlcourse/deeprlcourse/static/homeworks/hw2.pdf)) for more info.
+See the [Assignment PDF](https://rail.eecs.berkeley.edu/deeprlcourse/deeprlcourse/static/homeworks/hw2.pdf) for more info.
