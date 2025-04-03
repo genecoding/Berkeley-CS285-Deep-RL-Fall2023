@@ -1,0 +1,8 @@
+base_config: dqn_atari
+env_name: MsPacmanNoFrameskip-v0
+exp_name: mspacman
+
+learning_rate: 1.0e-4
+discount: 0.99
+target_update_period: 2000
+use_double_q: true

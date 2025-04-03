@@ -1,0 +1,8 @@
+base_config: dqn_atari
+env_name: SpaceInvadersNoFrameskip-v0
+exp_name: spaceinvaders_lr1e-3
+
+learning_rate: 1.0e-3
+discount: 0.99
+target_update_period: 2000
+use_double_q: true
