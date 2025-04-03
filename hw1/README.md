@@ -19,10 +19,10 @@
 * Learning curves
   * Grid search
     (x-axis: second)
-    [grid search]
+    ![grid search]
   * Eval of trained agent vs. the expert
     (x-axis: iteration)
-    [eval][train]
+    ![eval]![train]
 * Evaluation rollouts
 
 
