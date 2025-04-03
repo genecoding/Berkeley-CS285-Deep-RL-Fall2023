@@ -17,13 +17,22 @@
 
 ## Result
 * Learning curves
-  * Grid search
-    (x-axis: second)
-    ![grid search]
-  * Eval of trained agent vs. the expert
-    (x-axis: iteration)
-    ![eval]![train]
+  * Grid search  
+    (x-axis: second)  
+    <img src="results/grid search.png" width="45%" />
+  * Behavior Cloning vs. DAgger (including the eval of the trained agent vs. the performance of the expert)  
+    (x-axis: iteration)  
+    <div>
+     <img src="results/eval.png" width="45%" />
+     <img src="results/train.png" width="45%" />
+    </div>
 * Evaluation rollouts
+  | Behavior Cloning | DAgger            |
+  |:----------------:|:-----------------:|
+  |![bc_ant]         |![da_ant]          |
+  |![bc_halfcheetah] |![da_halfcheetah]  |
+  |![bc_hopper]      |![da_hopper]       |
+  |![bc_wakler2d]    |![da_wakler2d]     |
 
 
 
@@ -31,6 +40,11 @@
 [installation]: installation.md
 [Homework1]: https://rail.eecs.berkeley.edu/deeprlcourse/deeprlcourse/static/homeworks/hw1.pdf
 [run_hw1.ipynb]: cs285/scripts/run_hw1.ipynb
-[grid search]: <results/grid search.png>
-[eval]: results/eval.png
-[train]: results/train.png
+[bc_ant]: results/bc_ant.gif
+[bc_halfcheetah]: results/bc_halfcheetah.gif
+[bc_hopper]: results/bc_hopper.gif
+[bc_wakler2d]: results/bc_wakler2d.gif
+[da_ant]: results/da_ant.gif
+[da_halfcheetah]: results/da_halfcheetah.gif
+[da_hopper]: results/da_hopper.gif
+[da_wakler2d]: results/da_wakler2d.gif
