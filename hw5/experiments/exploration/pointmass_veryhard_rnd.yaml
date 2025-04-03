@@ -1,0 +1,6 @@
+base_config: "rnd"
+env_name: "PointmassVeryHard-v0"
+exp_name: "pointmass_veryhard_rnd"
+rnd_weight: 1.0
+dataset_name: "pointmass_veryhard_rnd"
+total_steps: 20000

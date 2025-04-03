@@ -1,0 +1,12 @@
+base_config: "iql"
+env_name: "PointmassVeryHard-v0"
+exp_name: "pointmass_veryhard_iql"
+use_double_q: true
+training_steps: 1000000
+dataset_name: "pointmass_veryhard_rnd"
+
+hidden_size: 256
+num_layers: 3
+
+expectile: 0.99
+temperature: 10.0

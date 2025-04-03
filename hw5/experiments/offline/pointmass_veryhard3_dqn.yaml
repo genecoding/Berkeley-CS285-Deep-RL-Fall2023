@@ -1,0 +1,9 @@
+base_config: "dqn"
+env_name: "PointmassVeryHard-v0"
+exp_name: "pointmass_veryhard_dqn"
+use_double_q: true
+training_steps: 1000000
+dataset_name: "pointmass_veryhard_rnd"
+
+hidden_size: 256
+num_layers: 3

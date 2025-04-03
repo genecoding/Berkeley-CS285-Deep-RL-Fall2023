@@ -1,0 +1,13 @@
+base_config: "iql"
+env_name: "PointmassHard-v0"
+exp_name: "pointmass_hard_iql"
+use_double_q: true
+total_steps: 200000
+offline_steps: 100000
+dataset_name: "pointmass_hard_rnd"
+
+expectile: 0.99
+temperature: 10.0
+
+hidden_size: 64
+num_layers: 2
