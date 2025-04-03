@@ -19,12 +19,12 @@
 * Learning curves
   * Grid search  
     (x-axis: seconds)  
-    <img src="results/grid search.png" width="45%" />
+    <img src="results/grid search.png" width="55%" />
   * Behavior Cloning vs. DAgger (including the performance of the agent vs. the expert)  
     (x-axis: iterations)  
     <div>
-     <img src="results/eval.png" width="45%" />
-     <img src="results/train.png" width="45%" />
+     <img src="results/eval.png" width="48%" />
+     <img src="results/train.png" width="48%" />
     </div>
 * Evaluation rollouts
   |                  | Behavior Cloning | DAgger            |
