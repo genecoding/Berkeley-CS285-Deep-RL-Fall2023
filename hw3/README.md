@@ -50,9 +50,16 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
        <img src="results/dqn_mspacman eval return.png" width="48%" />
        <img src="results/dqn_mspacman train return.png" width="48%" />
       </div>
-    * Evaluation rollouts
+      Since the agent tends to take random actions at early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
+    * Evaluation rollouts  
+      ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
   I choose `Space Invaders` and run with `learining rate = 1e-3, 5e-3, 1e-4, 5e-4`.
+  * Learning curves
+    <div>
+     <img src="results/dqn_space invaders.png" width="55%" />
+    </div>
+  * Evaluation rollouts
 * 3.1.1 Bootstrapping
 * 3.1.2 Entropy Bonus and Soft Actor-Critic
 * 3.1.3 Actor with REINFORCE
@@ -71,3 +78,4 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
 [doubleq_lunarlander_s1]: results/doubleq_lunarlander_s1.gif
 [doubleq_lunarlander_s2]: results/doubleq_lunarlander_s2.gif
 [doubleq_lunarlander_s3]: results/doubleq_lunarlander_s3.gif
+[mspacman]: results/doubleq_mspacman.gif
