@@ -6,7 +6,7 @@
 * Implemented algorithms:
   * [x] Behavior Cloning
   * [x] DAgger (Dataset Aggregation)
-* I do 3.2 first, do grid search on Ant and select a set of hyperparameters, apply to both BC and DA, and run on all four tasks. Although the homework only ask us to choose two of four, I just try all of them.
+* I do 3.2 first, I do grid search on Ant and select a set of hyperparameters, apply to both BC and DA, and run on all four tasks. Although the homework only ask us to choose two of four, I just try all of them.
 * Use hyperparameters:
   ```python
   num_agent_train_steps_per_iter = 10000
