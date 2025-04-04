@@ -45,7 +45,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       |![doubleq_lunarlander_s1] |![doubleq_lunarlander_s2] |![doubleq_lunarlander_s3]  |
   * Run your DQN implementation on the MsPacman-v0 problem.
     * Learning curves
-      * Train Return vs. 
+      * Eval Return vs. Train Return (smoothing: 0.85)
       <div>
        <img src="results/dqn_mspacman eval return.png" width="48%" />
        <img src="results/dqn_mspacman train return.png" width="48%" />
