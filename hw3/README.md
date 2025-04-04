@@ -24,13 +24,11 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
        <img src="results/dqn_cartpole qvalue.png" width="32%" />
        <img src="results/dqn_cartpole critic loss.png" width="32%" />
       </div>
-      
   * Run DQN with three different seeds on LunarLander-v2.
     * Learning curves
       <div>
        <img src="results/dqn_lunarlander.png" width="55%" />
       </div>
-      
       Q-Learning might be unstable.
     * Evaluation rollouts
       | s1               | s2               | s3                |
@@ -42,7 +40,6 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       <div>
        <img src="results/dqn_lunarlander_doubleq.png" width="55%" />
       </div>
-      
       Double Q-Learning shows more stablility.
     * Evaluation rollouts
       | s1                       | s2                       | s3                        |
@@ -55,7 +52,6 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
        <img src="results/dqn_mspacman eval return.png" width="48%" />
        <img src="results/dqn_mspacman train return.png" width="48%" />
       </div>
-      
       Since the agent tends to take random actions at early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
     * Evaluation rollouts  
       ![mspacman]
@@ -77,24 +73,22 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     |![spaceinvaders_lr1e-4] |![spaceinvaders_lr5e-4] |
 
 ----------------------------------------------------------
+
 * 3.1.1 Bootstrapping
   * (Testing) Hard Update vs. Soft Update
     <div>
      <img src="results/311.png" width="55%" />
     </div>
-    
 * 3.1.2 Entropy Bonus and Soft Actor-Critic
   * (Testing) Entropy during the critic updates. (smoothing: 0.85)
     <div>
      <img src="results/312.png" width="55%" />
     </div>
-    
 * 3.1.3 Actor with REINFORCE
   * (Testing) Train an agent on InvertedPendulum-v4 using sanity_invertedpendulum_reinforce.yaml.
     <div>
      <img src="results/313_invpendulum.png" width="55%" />
     </div>
-    
   * Train an agent on HalfCheetah-v4 using halfcheetah_reinforce1.yaml.
   * Train another agent with halfcheetah_reinforce10.yaml.  
     (see 3.1.4)
@@ -103,13 +97,11 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     <div>
      <img src="results/314_invpendulum.png" width="55%" />
     </div>
-    
   * Train (once again) on HalfCheetah-v4 with halfcheetah_reparametrize.yaml.  
     Comparison of REINFORCE-1, REINFORCE-10 and REPARAMETRIZE
     <div>
      <img src="results/314_halfcheetah.png" width="55%" />
     </div>
-    
   * Train an agent for the Humanoid-v4 environment with humanoid_sac.yaml.  
     (see 3.1.5)
 * 3.1.5 Stabilizing Target Values
@@ -118,7 +110,6 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
      <img src="results/315_hopper eval.png" width="55%" />
      <img src="results/315_hopper qvalue.png" width="55%" />
     </div>
-    
   * Pick the best configuration (single-Q/double-Q/clipped double-Q, or REDQ if you implement it) and run it on Humanoid-v4.  
     I choose `REDQ`.
     * Learning curves  
@@ -127,7 +118,6 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
        <img src="results/315_humanoid.png" width="48%" />
        <img src="results/315_humanoid hw2.png" width="48%" />
       </div>
-      
     * Evaluation rollouts
       | Clipped Double-Q    | REDQ                | 
       |:-------------------:|:-------------------:|
