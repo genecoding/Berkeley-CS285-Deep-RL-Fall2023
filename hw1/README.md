@@ -22,10 +22,9 @@
     <img src="results/grid search.png" width="55%" />
   * Behavior Cloning vs. DAgger (including the performance of the agent vs. the expert)  
     (x-axis: iterations)  
-    <div>
-     <img src="results/eval.png" width="48%" />
-     <img src="results/train.png" width="48%" />
-    </div>
+    <img src="results/eval.png" width="48%" />
+    <img src="results/train.png" width="48%" />
+
 * Evaluation rollouts
   |                  | Behavior Cloning | DAgger            |
   |:-----------------|:----------------:|:-----------------:|
