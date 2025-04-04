@@ -40,8 +40,8 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       </div>
       Double Q-Learning shows more stablility.
     * Evaluation rollouts
-      | s1               | s2               | s3                |
-      |:----------------:|:----------------:|:-----------------:|
+      | s1                       | s2                       | s3                        |
+      |:------------------------:|:------------------------:|:-------------------------:|
       |![doubleq_lunarlander_s1] |![doubleq_lunarlander_s2] |![doubleq_lunarlander_s3]  |
   * Run your DQN implementation on the MsPacman-v0 problem.
     * Learning curves
@@ -59,7 +59,16 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     <div>
      <img src="results/dqn_space invaders.png" width="55%" />
     </div>
+    
+    `lr = 1e-4` works best here.
   * Evaluation rollouts
+    | lr = 1e-3              | lr = 5e-3              | 
+    |:----------------------:|:----------------------:|
+    |![spaceinvaders_lr1e-3] |![spaceinvaders_lr5e-3] |
+
+    | lr = 1e-4              | lr = 5e-4              |
+    |:----------------------:|:----------------------:|
+    |![spaceinvaders_lr1e-4] |![spaceinvaders_lr5e-4] |
 * 3.1.1 Bootstrapping
 * 3.1.2 Entropy Bonus and Soft Actor-Critic
 * 3.1.3 Actor with REINFORCE
@@ -79,3 +88,8 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
 [doubleq_lunarlander_s2]: results/doubleq_lunarlander_s2.gif
 [doubleq_lunarlander_s3]: results/doubleq_lunarlander_s3.gif
 [mspacman]: results/doubleq_mspacman.gif
+[spaceinvaders_lr1e-3]: results/doubleq_spaceinvaders_lr1e-3.gif
+[spaceinvaders_lr5e-3]: results/doubleq_spaceinvaders_lr5e-3.gif
+[spaceinvaders_lr1e-4]: results/doubleq_spaceinvaders_lr1e-4.gif
+[spaceinvaders_lr5e-4]: results/doubleq_spaceinvaders_lr1e-4.gif
+
