@@ -2,7 +2,7 @@
 * [Homework3].
 * For detailed execution commands, see [run_hw3_dqn.ipynb] and [run_hw3_sac.ipynb].
 
-# Note
+## Note
 * Implemented algorithms:
   * [x] Q-Learning
   * [x] Double Q-Learning
@@ -10,10 +10,10 @@
   * [x] SAC (Soft Actor Critic)
   * [x] REDQ (Randomized Ensembled Double Q-Learning)
 
-# Troubleshooting
+## Troubleshooting
 Fix two bugs in `MemoryEfficientReplayBuffer`.
 
-# Result
+## Result
 * 2.4 Basic Q-Learning
   * Debug your DQN implementation on CartPole-v1.
   * Run DQN on CartPole-v1, but change the learning rate to 0.05.
@@ -122,7 +122,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       |:-------------------:|:-------------------:|
       |![humanoid]          |![humanoid_redq]     |
 
-# Reference
+## Reference
 * [Randomized Ensembled Double Q-Learning: Learning Fast Without a Model], X Chen *et al.*
 
 
