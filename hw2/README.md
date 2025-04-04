@@ -46,10 +46,8 @@
     |![exp2]           |
 * Experiment 3 (LunarLander)
   * Learning curves (smoothing: 0.85)
-    * Comparison of λ
-      <div>
-       <img src="results/exp3.png" width="55%"/>
-      </div>
+    * Comparison of λ  
+      <img src="results/exp3.png" width="55%"/>
   * Evaluation rollouts
     | λ = 0.98         |
     |:----------------:|
@@ -63,23 +61,17 @@
   discount = 0.99
   ```
   * Learning curves
-    * Performance of tuned hyperparameters
-      <div>
-       <img src="results/exp4_tuned.png" width="55%" />
-      </div>
-    * Default vs. Tuned Hyperparameters
-      <div>
-       <img src="results/exp4_compare.png" width="55%" />
-      </div>
+    * Performance of tuned hyperparameters  
+      <img src="results/exp4_tuned.png" width="55%" />
+    * Default vs. Tuned Hyperparameters  
+      <img src="results/exp4_compare.png" width="55%" />
   * Evaluation rollouts
     | tuned, s2        |
     |:----------------:|
     |![exp4]           |
 * Experiment 5 (Humanoid)
-  * Learning curves (smoothing: 0.85)
-    <div>
-     <img src="results/exp5.png" width="55%" />
-    </div>
+  * Learning curves (smoothing: 0.85)  
+    <img src="results/exp5.png" width="55%" />
   * Evaluation rollouts  
     ![exp5]
 
