@@ -11,11 +11,9 @@
 * Experiment 1 (CartPole)
   * Learning curves
     * Small Batch vs. Large Batch  
-      (x-axis: environment steps)
-      <div>
-       <img src="results/exp1.png" width="48%" />
-       <img src="results/exp1_lb.png" width="48%" />
-      </div>
+      (x-axis: environment steps)  
+      <img src="results/exp1.png" width="48%" />
+      <img src="results/exp1_lb.png" width="48%" />
   * Evaluation rollouts  
     (both with rtg & na)
     | small batch      | large batch      |
@@ -23,23 +21,16 @@
     |![exp1]           |![exp1_lb]        |
 * Experiment 2 (HalfCheetah)
   * Learning curves
-    * Without Baseline vs. Baseline
-      <div>
-       <img src="results/exp2_baseline eval.png" width="48%" />
-       <img src="results/exp2_baseline loss.png" width="48%" />
-      </div>
-    * Comparison of decreased bgs & blr
-      <div>
-       <img src="results/exp2_bgs-blr eval.png" width="48%" />
-       <img src="results/exp2_bgs-blr loss.png" width="48%" />
-      </div>
-      
+    * Without Baseline vs. Baseline  
+      <img src="results/exp2_baseline eval.png" width="48%" />
+      <img src="results/exp2_baseline loss.png" width="48%" />
+    * Comparison of decreased bgs & blr  
+      <img src="results/exp2_bgs-blr eval.png" width="48%" />
+      <img src="results/exp2_bgs-blr loss.png" width="48%" />
       The default setting of baseline is: `bgs = 5, blr = 0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
-    * Without NA vs. NA
-      <div>
-       <img src="results/exp2_na eval.png" width="48%" />
-       <img src="results/exp2_na loss.png" width="48%" />
-      </div>
+    * Without NA vs. NA  
+      <img src="results/exp2_na eval.png" width="48%" />
+      <img src="results/exp2_na loss.png" width="48%" />
   * Evaluation rollouts
     | baseline + na    |
     |:----------------:|
