@@ -48,8 +48,8 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     * Evaluation rollouts  
       ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
-  I choose `Space Invaders` and run with `learining rate = 1e-3, 5e-3, 1e-4, 5e-4`.
-  * Learning curves
+  I choose `Space Invaders` and run with `learining rate = 1e-3, 5e-3, 1e-4, 5e-4`.  
+  * Learning curves  
     <img src="results/dqn_space invaders.png" width="55%" />  
     `lr = 1e-4` works best here.
   * Evaluation rollouts
@@ -64,15 +64,11 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
 ----------------------------------------------------------
 
 * 3.1.1 Bootstrapping
-  * (Testing) Hard Update vs. Soft Update
-    <div>
-     <img src="results/311.png" width="55%" />
-    </div>
+  * (Testing) Hard Update vs. Soft Update  
+    <img src="results/311.png" width="55%" />
 * 3.1.2 Entropy Bonus and Soft Actor-Critic
   * (Testing) Entropy during the critic updates. (smoothing: 0.85)
-    <div>
-     <img src="results/312.png" width="55%" />
-    </div>
+    <img src="results/312.png" width="55%" />
 * 3.1.3 Actor with REINFORCE
   * (Testing) Train an agent on InvertedPendulum-v4 using sanity_invertedpendulum_reinforce.yaml.
     <div>
