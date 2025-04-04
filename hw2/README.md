@@ -34,7 +34,7 @@
        <img src="results/exp2_bgs-blr loss.png" width="48%" />
       </div>
       
-      The default setting of baseline is: `bgs=5, blr=0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
+      The default setting of baseline is: `bgs = 5, blr = 0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
     * Without NA vs. NA
       <div>
        <img src="results/exp2_na eval.png" width="48%" />
@@ -45,7 +45,7 @@
     |:----------------:|
     |![exp2]           |
 * Experiment 3 (LunarLander)
-  * Learning curves
+  * Learning curves (smoothing: 0.85)
     * Comparison of λ
       <div>
        <img src="results/exp3.png" width="55%"/>
