@@ -67,42 +67,32 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
   * (Testing) Hard Update vs. Soft Update  
     <img src="results/311.png" width="55%" />
 * 3.1.2 Entropy Bonus and Soft Actor-Critic
-  * (Testing) Entropy during the critic updates. (smoothing: 0.85)
+  * (Testing) Entropy during the critic updates. (smoothing: 0.85)  
     <img src="results/312.png" width="55%" />
 * 3.1.3 Actor with REINFORCE
-  * (Testing) Train an agent on InvertedPendulum-v4 using sanity_invertedpendulum_reinforce.yaml.
-    <div>
-     <img src="results/313_invpendulum.png" width="55%" />
-    </div>
+  * (Testing) Train an agent on InvertedPendulum-v4 using sanity_invertedpendulum_reinforce.yaml.  
+    <img src="results/313_invpendulum.png" width="55%" />
   * Train an agent on HalfCheetah-v4 using halfcheetah_reinforce1.yaml.
   * Train another agent with halfcheetah_reinforce10.yaml.  
     (see 3.1.4)
 * 3.1.4 Actor with REPARAMETRIZE
-  * (Testing) Make sure you can solve InvertedPendulum-v4 using sanity_invertedpendulum_reparametrize.yaml.
-    <div>
-     <img src="results/314_invpendulum.png" width="55%" />
-    </div>
+  * (Testing) Make sure you can solve InvertedPendulum-v4 using sanity_invertedpendulum_reparametrize.yaml.  
+    <img src="results/314_invpendulum.png" width="55%" />
   * Train (once again) on HalfCheetah-v4 with halfcheetah_reparametrize.yaml.  
-    Comparison of REINFORCE-1, REINFORCE-10 and REPARAMETRIZE
-    <div>
-     <img src="results/314_halfcheetah.png" width="55%" />
-    </div>
+    Comparison of REINFORCE-1, REINFORCE-10 and REPARAMETRIZE  
+    <img src="results/314_halfcheetah.png" width="55%" />
   * Train an agent for the Humanoid-v4 environment with humanoid_sac.yaml.  
     (see 3.1.5)
 * 3.1.5 Stabilizing Target Values
-  * Run single-Q, double-Q, and clipped double-Q on Hopper-v4.
-    <div>
-     <img src="results/315_hopper eval.png" width="55%" />
-     <img src="results/315_hopper qvalue.png" width="55%" />
-    </div>
+  * Run single-Q, double-Q, and clipped double-Q on Hopper-v4.  
+    <img src="results/315_hopper eval.png" width="55%" />
+    <img src="results/315_hopper qvalue.png" width="55%" />
   * Pick the best configuration (single-Q/double-Q/clipped double-Q, or REDQ if you implement it) and run it on Humanoid-v4.  
     I choose `REDQ`.
     * Learning curves  
-      Clipped Double-Q vs. REDQ (including Policy Gradient from hw2) (smoothing: 0.85)
-      <div>
-       <img src="results/315_humanoid.png" width="48%" />
-       <img src="results/315_humanoid hw2.png" width="48%" />
-      </div>
+      Clipped Double-Q vs. REDQ (including Policy Gradient from hw2) (smoothing: 0.85)  
+      <img src="results/315_humanoid.png" width="48%" />
+      <img src="results/315_humanoid hw2.png" width="48%" />
     * Evaluation rollouts
       | Clipped Double-Q    | REDQ                | 
       |:-------------------:|:-------------------:|
