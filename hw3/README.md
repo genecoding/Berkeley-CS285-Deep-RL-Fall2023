@@ -1,5 +1,5 @@
 # Homework 3
-* [Homework3].
+* [Homework3]
 * For detailed execution commands, see [run_hw3_dqn.ipynb] and [run_hw3_sac.ipynb].
 
 ## Note
@@ -18,17 +18,13 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
   * Debug your DQN implementation on CartPole-v1.
   * Run DQN on CartPole-v1, but change the learning rate to 0.05.
     * Learning curves  
-      (x-axis: environment steps)
-      <div>
-       <img src="results/dqn_cartpole eval.png" width="32%" />
-       <img src="results/dqn_cartpole qvalue.png" width="32%" />
-       <img src="results/dqn_cartpole critic loss.png" width="32%" />
-      </div>
+      (x-axis: environment steps)  
+      <img src="results/dqn_cartpole eval.png" width="32%" />
+      <img src="results/dqn_cartpole qvalue.png" width="32%" />
+      <img src="results/dqn_cartpole critic loss.png" width="32%" />
   * Run DQN with three different seeds on LunarLander-v2.
-    * Learning curves
-      <div>
-       <img src="results/dqn_lunarlander.png" width="55%" />
-      </div>
+    * Learning curves  
+      <img src="results/dqn_lunarlander.png" width="55%" />  
       Q-Learning might be unstable.
     * Evaluation rollouts
       | s1               | s2               | s3                |
@@ -36,10 +32,8 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       |![lunarlander_s1] |![lunarlander_s2] |![lunarlander_s3]  |
 * 2.5 Double Q-Learning
   * Run three more seeds of the lunar lander problem.
-    * Learning curves
-      <div>
-       <img src="results/dqn_lunarlander_doubleq.png" width="55%" />
-      </div>
+    * Learning curves  
+      <img src="results/dqn_lunarlander_doubleq.png" width="55%" />  
       Double Q-Learning shows more stablility.
     * Evaluation rollouts
       | s1                       | s2                       | s3                        |
@@ -47,21 +41,16 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       |![doubleq_lunarlander_s1] |![doubleq_lunarlander_s2] |![doubleq_lunarlander_s3]  |
   * Run your DQN implementation on the MsPacman-v0 problem.
     * Learning curves  
-      Eval Return vs. Train Return (smoothing: 0.85)
-      <div>
-       <img src="results/dqn_mspacman eval return.png" width="48%" />
-       <img src="results/dqn_mspacman train return.png" width="48%" />
-      </div>
+      Eval Return vs. Train Return (smoothing: 0.85)  
+      <img src="results/dqn_mspacman eval return.png" width="48%" />
+      <img src="results/dqn_mspacman train return.png" width="48%" />  
       Since the agent tends to take random actions at early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
     * Evaluation rollouts  
       ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
   I choose `Space Invaders` and run with `learining rate = 1e-3, 5e-3, 1e-4, 5e-4`.
   * Learning curves
-    <div>
-     <img src="results/dqn_space invaders.png" width="55%" />
-    </div>
-    
+    <img src="results/dqn_space invaders.png" width="55%" />  
     `lr = 1e-4` works best here.
   * Evaluation rollouts
     | lr = 1e-3              | lr = 5e-3              | 
