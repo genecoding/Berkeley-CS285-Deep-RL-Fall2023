@@ -5,7 +5,7 @@
 ## Note
 * Implemented algorithms:
   * [x] Policy Gradient (with value function)
-  * [x] GAE (Generalized Advantage Estimation)
+  * [x] Generalized Advantage Estimation (GAE)
 
 ## Result
 * Experiment 1 (CartPole)
