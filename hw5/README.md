@@ -11,7 +11,7 @@
   * [x] 
 
 ## Troubleshooting
-In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I tried `use_reward` flag, didn't work...
+In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I had tried `use_reward` flag, it didn't work...
 
 ## Result
 ### 3 Exploration
