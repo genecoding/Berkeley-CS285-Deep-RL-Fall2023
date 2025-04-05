@@ -36,13 +36,21 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
       |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
       |[![off_med_cql0.01_0]][off_med_cql0.01] |[![off_med_cql1.0_0]][off_med_cql1.0]   |[![off_med_cql5.0_0]][off_med_cql5.0]   |[![off_med_cql10.0_0]][off_med_cql10.0] |
 * 4.2 Policy Constraint Methods: IQL and AWAC
-  * Learning curves
+  * Learning curves  
     Comparison of DQN, CQL, AWAC and IQL
-    * Easy
-    * Medium
+    * Easy  
+      <img src="results/easy.png" width="55%" />
+    * Medium  
+      <img src="results/medium.png" width="55%" />
   * Evaluation rollouts
     * Easy
+      | DQN                              | CQL                                  | AWAC                                  | IQL                                |
+      |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
+      |[![off_easy_dqn_0]][off_easy_dqn] |[![off_easy_cql0.1_0]][off_easy_cql0.1]   |[![off_easy_awac10.0_0]][off_easy_awac10.0]   |[![off_easy_iql0.99_0]][off_easy_iql0.99] |
     * Medium
+      | DQN                                | CQL                                 | AWAC                                  | IQL                                 |
+      |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
+      |[!] |[![off_med_cql1.0_0]][off_med_cql1.0]   |[![off_med_cql5.0_0]][off_med_cql5.0]   |[![off_med_cql10.0_0]][off_med_cql10.0] |
 * 4.3 Data Ablations
   I run on Hard.
   * Exploration (with RND)
@@ -68,6 +76,7 @@ I run DQN, CQL, AWAC and IQL on Hard, and compare offline training and online fi
 [rnd_easy]: exploration_visualization/PointmassEasy-v0_rnd1.0.png
 [rnd_medium]: exploration_visualization/PointmassMedium-v0_rnd1.0.png
 [rnd_hard]: exploration_visualization/PointmassHard-v0_rnd1.0.png
+
 [off_med_cql0.01_0]: results/offline_medium_cql0.01_0.png
 [off_med_cql1.0_0]: results/offline_medium_cql1.0_0.png
 [off_med_cql5.0_0]: results/offline_medium_cql5.0_0.png
@@ -76,3 +85,21 @@ I run DQN, CQL, AWAC and IQL on Hard, and compare offline training and online fi
 [off_med_cql1.0]: results/offline_medium_cql1.0.png
 [off_med_cql5.0]: results/offline_medium_cql5.0.png
 [off_med_cql10.0]: results/offline_medium_cql10.0.png
+
+[off_easy_dqn_0]: results/offline_easy_dqn_0.png
+[off_easy_cql0.1_0]: results/offline_easy_cql0.1_0.png
+[off_easy_awac10.0_0]: results/offline_easy_awac10.0_0.png
+[off_easy_iql0.99_0]: results/offline_easy_iql0.99_temp10.0_0.png
+[off_easy_dqn]: results/offline_easy_dqn.png
+[off_easy_cql0.1]: results/offline_easy_cql0.1.png
+[off_easy_awac10.0]: results/offline_easy_awac10.0.png
+[off_easy_iql0.99]: results/offline_easy_iql0.99_temp10.0.png
+
+[off_med_dqn_0]: results/offline_medium_dqn_0.png
+[off_med_cql0.1_0]: results/offline_medium_cql0.1_0.png
+[off_med_awac10.0_0]: results/offline_medium_awac10.0_0.png
+[off_med_iql0.99_0]: results/offline_medium_iql0.99_temp10.0_0.png
+[off_med_dqn]: results/offline_medium_dqn.png
+[off_med_cql0.1]: results/offline_medium_cql0.1.png
+[off_med_awac10.0]: results/offline_medium_awac10.0.png
+[off_med_iql0.99]: results/offline_medium_iql0.99_temp10.0.png
