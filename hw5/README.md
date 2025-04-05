@@ -22,12 +22,18 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
 
 ### 4 Offline RL
 * 4.1 CQL
-  * Run DQN and CQL on Easy and Medium.
+  * Run DQN and CQL on Easy and Medium.  
     (see 4.2)
   * On the Medium environment, create several experiment variations in which the value of the α parameter is varied, from α = 0 (equivalent to DQN) to α = 10.  
     I try `α = 0.01, 1, 5, 10`. (default α = 0.1)
-    * Learning curves
+    * Learning curves  
+      (x-axis: environment steps)  
+      <img src="results/medium_cql alpha.png" width="55%" />
+      <img src="results/medium_cql alpha qvalue.png" width="55%" />
     * Evaluation rollouts
+      | α = 0.01                 | α = 1             | α = 5           | α = 10           |
+      |:----------------:|:----------------:|:----------------:|:----------------:|
+      |[![offline_medium_cql0.1_0]][offline_medium_cql0.1]          |![random_easy]    |![random_medium]  |![random_hard]    |
 * 4.2 Policy Constraint Methods: IQL and AWAC
   * Learning curves
     Comparison of DQN, CQL, AWAC and IQL
@@ -44,6 +50,9 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
 
 ### 5 Online Fine-Tuning
 I run DQN, CQL, AWAC and IQL on Hard, and compare offline training and online finetuning.
+* Learning curves
+* Evaluation rollouts
+
 ### Bonus Problem
 
 ## Reference
@@ -58,3 +67,11 @@ I run DQN, CQL, AWAC and IQL on Hard, and compare offline training and online fi
 [rnd_easy]: exploration_visualization/PointmassEasy-v0_rnd1.0.png
 [rnd_medium]: exploration_visualization/PointmassMedium-v0_rnd1.0.png
 [rnd_hard]: exploration_visualization/PointmassHard-v0_rnd1.0.png
+[offline_medium_cql0.1_0]: results/offline_medium_cql0.1_0.png
+[offline_medium_cql1.0_0]: results/offline_medium_cql1.0_0.png
+[offline_medium_cql5.0_0]: results/offline_medium_cql5.0_0.png
+[offline_medium_cql10.0_0]: results/offline_medium_cql10.0_0.png
+[offline_medium_cql0.1]: results/offline_medium_cql0.1.png
+[offline_medium_cql1.0]: results/offline_medium_cql1.0.png
+[offline_medium_cql5.0]: results/offline_medium_cql5.0.png
+[offline_medium_cql10.0]: results/offline_medium_cql10.0.png
