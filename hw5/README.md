@@ -15,11 +15,10 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
 
 ## Result
 ### 3 Exploration
-* 3.1 Running a Random Policy
-  | Easy             | Medium           | Hard             |
-  |:----------------:|:----------------:|:----------------:|
-  |![random_easy]    |![random_medium]  |![random_hard]    |
-* 3.2 Random Network Distillation
+|                  | Easy             | Medium           | Hard             |
+|:-----------------|:----------------:|:----------------:|:----------------:|
+| Random           |![random_easy]    |![random_medium]  |![random_hard]    |
+| RND              |![rnd_easy]       |![rnd_medium]     |![rnd_hard]       |
 ### 4 Offline RL
 * 4.1 CQL
 * 4.2 Policy Constraint Methods: IQL and AWAC
@@ -36,3 +35,6 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
 [random_easy]: exploration_visualization/PointmassEasy-v0_random.png
 [random_medium]: exploration_visualization/PointmassMedium-v0_random.png
 [random_hard]: exploration_visualization/PointmassHard-v0_random.png
+[rnd_easy]: exploration_visualization/PointmassEasy-v0_rnd1.0.png
+[rnd_medium]: exploration_visualization/PointmassMedium-v0_rnd1.0.png
+[rnd_hard]: exploration_visualization/PointmassHard-v0_rnd1.0.png
