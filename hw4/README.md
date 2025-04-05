@@ -14,30 +14,46 @@
   | default          | lr = 0.01        | numlayers = 3     |
   |:----------------:|:----------------:|:-----------------:|
   |![p1_default]     |![p1_lr]          |![p1_numlayers]    |
-* Problem 2
-  <div>
-    <img src="results/problem2.png" width="55%" />
-  </div>
+* Problem 2  
+  (x-axis: iterations)  
+  <img src="results/problem2.png" width="55%" />
 * Problem 3
-  * Learning curves
-    <div>
-      <img src="results/problem3.png" width="55%" />
-    </div>
+  * Learning curves  
+    <img src="results/problem3.png" width="55%" />
   * Evaluation rollouts
-    | numlayers = 3     |
-    |:-----------------:|
-    |![p1_numlayers]    |
+    | obstacles        |
+    |:----------------:|
+    |![obstacles]      |
     
-    | numlayers = 3     |
-    |:-----------------:|
-    |![p1_numlayers]    |
+    | reacher          |
+    |:----------------:|
+    |![reacher]        |
 
-    | numlayers = 3     |
-    |:-----------------:|
-    |![p1_numlayers]    |
-* Problem 4
+    | halfcheetah      |
+    |:----------------:|
+    |![cheetah]        |
+* Problem 4  
+  The default setting is:
+  ```python
+  ensemble_size = 3
+  mpc_num_action_sequences = 1000
+  mpc_horizon = 10
+  ```
+  <img src="results/problem4.png" width="55%" />
 * Problem 5
+  * Learning curves  
+    <img src="results/problem5.png" width="55%" />
+  * Evaluation rollouts
+    | cem_num_iters = 2               | cem_num_iters = 4               |
+    |:-------------------------------:|:-------------------------------:|
+    |![cheetah_cem_cemnumiters=2]     |![cheetah_cem_cemnumiters=2]     |
 * Problem 6
+  * Learning curves  
+    <img src="results/problem6.png" width="55%" />
+  * Evaluation rollouts
+    | Model-free SAC baseline mbpo_rollout_length = 0 | Dyna-like algorithm mbpo_rollout_length = 1 | MBPO mbpo_rollout_length = 10 |
+    |:----------------:|:----------------:|:-----------------:|
+    |![cheetah_mbpo_rolloutlen=0]     |![cheetah_mbpo_rolloutlen=1]          |![cheetah_mbpo_rolloutlen=10]    |
 
 ## Reference
 
@@ -48,3 +64,11 @@
 [p1_default]: results/itr_1_loss_curve.png
 [p1_lr]: <results/itr_1_loss_curve lr=0.01.png>
 [p1_numlayers]: <results/itr_1_loss_curve numlayers=3.png>
+[obstacles]: results/obstacles_multi.gif
+[reacher]: results/reacher_multi.gif
+[cheetah]: results/cheetah_multi.gif
+[cheetah_cem_cemnumiters=2]: results/cheetah_cem_cemnumiters=2.gif
+[cheetah_cem_cemnumiters=4]: results/cheetah_cem_cemnumiters=4.gif
+[cheetah_mbpo_rolloutlen=0]: results/cheetah_mbpo_rolloutlen=0.gif
+[cheetah_mbpo_rolloutlen=1]: results/cheetah_mbpo_rolloutlen=1.gif
+[cheetah_mbpo_rolloutlen=10]: results/cheetah_mbpo_rolloutlen=10.gif
