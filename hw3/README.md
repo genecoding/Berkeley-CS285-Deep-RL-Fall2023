@@ -63,6 +63,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     |![spaceinvaders_lr1e-4] |![spaceinvaders_lr5e-4] |
 
 ----------------------------------------------------------
+
 ### 3 Continuous Actions with Actor-Critic
 * 3.1.1 Bootstrapping
   * (Testing) Hard Update vs. Soft Update  
