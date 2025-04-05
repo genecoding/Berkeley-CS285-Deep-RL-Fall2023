@@ -43,6 +43,26 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
     * Medium  
       <img src="results/medium.png" width="55%" />
   * Evaluation rollouts
+    
+    <table>
+      <thead>
+        <tr>
+          <td>DQN</td>
+          <td>CQL</td>
+          <td>AWAC</td>
+          <td>IQL</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+           <td><a href="results/offline_easy_dqn.png"><img src="results/offline_easy_dqn_0.png" width="90%" /></a></td>
+           <td><a href="results/offline_easy_cql0.1.png"><img src="results/offline_easy_cql0.1_0.png" width="90%" /></a></td>
+           <td><a href="results/offline_easy_awac10.0.png"><img src="results/offline_easy_awac10.0_0.png" width="90%" /></a></td>
+           <td><a href="results/offline_easy_iql0.99_temp10.0.png"><img src="results/offline_easy_iql0.99_temp10.0_0.png" width="90%" /></a></td>
+        </tr>
+      </tbody>
+    </table>
+    
     * Easy
       | DQN                              | CQL                                  | AWAC                                  | IQL                                |
       |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
