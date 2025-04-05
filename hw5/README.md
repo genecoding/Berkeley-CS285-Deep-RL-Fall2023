@@ -87,6 +87,11 @@ I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training a
   
 ### Bonus Problem
 I also try extra mazes. ：）
+| Fly Trap Small                    | Fly Trap Big                    | Tree                   | Galton                    |
+|:----------------------:|:----------------------:|:----------------------:|:----------------------:|
+|![last_traj_hard_dqn]   |![last_traj_hard_cql]   |![last_traj_hard_awac]  |![last_traj_hard_iql]   |
+
+For detailed results, see [here].
 
 ## Reference
 
@@ -163,3 +168,11 @@ I also try extra mazes. ：）
 [last_traj_hard_awac]: exploration_visualization/finetune_PointmassHard-v0_awac10.0.png
 [last_traj_hard_iql]: exploration_visualization/finetune_PointmassHard-v0_iql0.99_temp10.0.png
 
+[on_flytrapsmall_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
+[on_flytrapbig_iql_0]: results/finetune_veryhard-flytrapbig_iql0.99_temp10.0_0.png
+[on_tree_iql_0]: results/finetune_veryhard-tree_iql0.99_temp10.0_0.png
+[on_galton_iql_0]: results/finetune_veryhard-galton_iql0.99_temp10.0_0.png
+[on_spiral11x11_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
+[on_maze11x11_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
+[on_umulti_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
+[on_tunnel_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
