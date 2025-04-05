@@ -14,6 +14,7 @@
 Fix two bugs in `MemoryEfficientReplayBuffer`.
 
 ## Result
+### 2 Deep Q-Learning
 * 2.4 Basic Q-Learning
   * Debug your DQN implementation on CartPole-v1.
   * Run DQN on CartPole-v1, but change the learning rate to 0.05.
@@ -62,7 +63,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     |![spaceinvaders_lr1e-4] |![spaceinvaders_lr5e-4] |
 
 ----------------------------------------------------------
-
+### 3 Continuous Actions with Actor-Critic
 * 3.1.1 Bootstrapping
   * (Testing) Hard Update vs. Soft Update  
     <img src="results/311.png" width="55%" />
