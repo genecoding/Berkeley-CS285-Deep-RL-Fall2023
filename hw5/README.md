@@ -62,7 +62,7 @@ total_steps = 10000
     |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   * Learning curves  
     <img src="results/hard_data ablation.png" width="55%" />  
-    When the maze becomes difficult, the agent struggles to reach the goal with only offline training; but by using larger dataset, the situation can be improved.
+    When the maze becomes difficult, the agent struggles to reach the goal with only offline training. By using larger dataset, the situation can be improved though...
   * Evalution rollouts  
     (It's total_steps of exploration, i.e., the size of dataset.)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
@@ -81,12 +81,10 @@ I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training a
   | offline training  |[![off_hard_dqn_0]][off_hard_dqn] |[![off_hard_cql0.1_0]][off_hard_cql0.1] |[![off_hard_awac10.0_0]][off_hard_awac10.0] |[![off_hard_iql0.99_0]][off_hard_iql0.99] |
   | online finetuning |[![on_hard_dqn_0]][on_hard_dqn]   |[![on_hard_cql0.1_0]][on_hard_cql0.1]   |[![on_hard_awac10.0_0]][on_hard_awac10.0]   |[![on_hard_iql0.99_0]][on_hard_iql0.99]   |
 * Last 10000 steps during finetune training
-  | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
-    |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
-    |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
+  | DQN                    | CQL                    | AWAC                   | IQL                    |
+  |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
+  |![last_traj_hard_dqn]   |![last_traj_hard_cql]   |![last_traj_hard_awac]  |![last_traj_hard_iql]   |
   
-  
-
 ### Bonus Problem
 I also try extra mazes. ：）
 
@@ -160,4 +158,8 @@ I also try extra mazes. ：）
 [on_hard_cql0.1]: results/finetune_hard_cql0.1.png
 [on_hard_awac10.0]: results/finetune_hard_awac10.0.png
 [on_hard_iql0.99]: results/finetune_hard_iql0.99_temp10.0.png
-[last_hard_dqn]: exploration_visualization/finetune_PointmassHard-v0_dqn.png
+[last_traj_hard_dqn]: exploration_visualization/finetune_PointmassHard-v0_dqn.png
+[last_traj_hard_cql]: exploration_visualization/finetune_PointmassHard-v0_cql0.1.png
+[last_traj_hard_awac]: exploration_visualization/finetune_PointmassHard-v0_awac10.0.png
+[last_traj_hard_iql]: exploration_visualization/finetune_PointmassHard-v0_iql0.99_temp10.0.png
+
