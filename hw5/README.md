@@ -4,14 +4,13 @@
 
 ## Note
 * Implemented algorithms:
-  * [x] 
-  * [x] 
-  * [x] 
-  * [x] 
-  * [x] 
+  * [x] Random Network Distillation (RND)
+  * [x] Conservative Q-Learning (CQL) 
+  * [x] Advantage Weighted Actor Critic (AWAC)
+  * [x] Implicit Q-Learning (IQL)
 
 ## Troubleshooting
-In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I had tried `use_reward` flag, it didn't work...
+In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I had tried `use_reward` flag but it didn't work...
 
 ## Result
 ### 3 Exploration
@@ -87,9 +86,13 @@ I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training a
   
 ### Bonus Problem
 I also try extra mazes. ：）
-| Fly Trap Small                    | Fly Trap Big                    | Tree                   | Galton                    |
+| Fly Trap Small         | Fly Trap Big           | Tree                   | Galton                 |
 |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
-|![last_traj_hard_dqn]   |![last_traj_hard_cql]   |![last_traj_hard_awac]  |![last_traj_hard_iql]   |
+|[![on_flytrapsmall_iql_0]][on_flytrapsmall_iql] |[![on_flytrapbig_iql_0]][on_flytrapbig_iql] |[![on_tree_iql_0]][on_tree_iql] |[![on_galton_iql_0]][on_galton_iql] |
+
+| Spiral 11x11         | Maze 11x11           | UMulti                   | Tunnel                 |
+|:----------------------:|:----------------------:|:----------------------:|:----------------------:|
+|[![on_spiral11x11_iql_0]][on_spiral11x11_iql] |[![on_maze11x11_iql_0]][on_maze11x11_iql] |[![on_umulti_iql_0]][on_umulti_iql] |[![on_tunnel_iql_0]][on_tunnel_iql] |
 
 For detailed results, see [here].
 
@@ -172,7 +175,16 @@ For detailed results, see [here].
 [on_flytrapbig_iql_0]: results/finetune_veryhard-flytrapbig_iql0.99_temp10.0_0.png
 [on_tree_iql_0]: results/finetune_veryhard-tree_iql0.99_temp10.0_0.png
 [on_galton_iql_0]: results/finetune_veryhard-galton_iql0.99_temp10.0_0.png
-[on_spiral11x11_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
-[on_maze11x11_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
-[on_umulti_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
-[on_tunnel_iql_0]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0_0.png
+[on_spiral11x11_iql_0]: results/finetune_veryhard-spiral11x11_iql0.99_temp10.0_0.png
+[on_maze11x11_iql_0]: <results/finetune_veryhard-maze11x11_iql0.99_temp10.0 (510k)_0.png>
+[on_umulti_iql_0]: <results/finetune_veryhard-umulti_iql0.99_temp10.0 (950k)_0.png>
+[on_tunnel_iql_0]: results/finetune_veryhard-tunnel_iql0.99_temp10.0_0.png
+
+[on_flytrapsmall_iql]: results/finetune_veryhard-flytrapsmall_iql0.99_temp10.0.png
+[on_flytrapbig_iql]: results/finetune_veryhard-flytrapbig_iql0.99_temp10.0.png
+[on_tree_iql]: results/finetune_veryhard-tree_iql0.99_temp10.0.png
+[on_galton_iql]: results/finetune_veryhard-galton_iql0.99_temp10.0.png
+[on_spiral11x11_iql]: results/finetune_veryhard-spiral11x11_iql0.99_temp10.0.png
+[on_maze11x11_iql]: <results/finetune_veryhard-maze11x11_iql0.99_temp10.0 (510k).png>
+[on_umulti_iql]: <results/finetune_veryhard-umulti_iql0.99_temp10.0 (950k)_0.png>
+[on_tunnel_iql]: results/finetune_veryhard-tunnel_iql0.99_temp10.0.png
