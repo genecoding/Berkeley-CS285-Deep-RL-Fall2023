@@ -36,9 +36,8 @@
     |:----------------:|
     |![exp2]           |
 * Experiment 3 (LunarLander)
-  * Learning curves (smoothing: 0.85)
-    * Comparison of λ  
-      <img src="results/exp3.png" width="55%"/>
+  * Learning curves (smoothing: 0.85)  
+    <img src="results/exp3.png" width="55%"/>
   * Evaluation rollouts
     | λ = 0.98         |
     |:----------------:|
