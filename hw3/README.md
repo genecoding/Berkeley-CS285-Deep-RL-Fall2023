@@ -6,9 +6,9 @@
 * Implemented algorithms:
   * [x] Q-Learning
   * [x] Double Q-Learning
-  * [x] Clipped Double Q-Learning
-  * [x] SAC (Soft Actor Critic)
-  * [x] REDQ (Randomized Ensembled Double Q-Learning)
+  * [x] Soft Actor-Critic (SAC)
+  * [x] Clipped Double Q-Learning 
+  * [x] Randomized Ensembled Double Q-Learning (REDQ)
 
 ## Troubleshooting
 Fix two bugs in `MemoryEfficientReplayBuffer`.
