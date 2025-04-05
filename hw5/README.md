@@ -34,7 +34,7 @@ total_steps = 10000
       <img src="results/medium_cql alpha.png" width="55%" />
       <img src="results/medium_cql alpha qvalue.png" width="55%" />
     * Evaluation rollouts  
-      (click pictures to see all evalutions)
+      **(click pictures to see all evalutions)**
       | α = 0.01                               | α = 1                                  | α = 5                                  | α = 10                                 |
       |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
       |[![off_med_cql0.01_0]][off_med_cql0.01] |[![off_med_cql1.0_0]][off_med_cql1.0]   |[![off_med_cql5.0_0]][off_med_cql5.0]   |[![off_med_cql10.0_0]][off_med_cql10.0] |
@@ -62,17 +62,28 @@ total_steps = 10000
     |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   * Learning curves  
     <img src="results/hard_data ablation.png" width="55%" />
-  * Evalution rollouts
+  * Evalution rollouts  
+    (It's total_steps of exploration, i.e., the size of dataset.)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
     |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
     |[![off_hard_cql_1000_0]][off_hard_cql_1000] |[![off_hard_cql_5000_0]][off_hard_cql_5000] |[![off_hard_cql_10000_0]][off_hard_cql_10000] |[![off_hard_cql_20000_0]][off_hard_cql_20000] |
+    
+    When the maze becomes difficult, the agent struggles to reach the goal with only offline training; but by using larger dataset, the situation can be improved.
 
 ### 5 Online Fine-Tuning
 I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training and online finetuning.
-* Learning curves
+* Learning curves  
+  <img src="results/hard_finetune.png" width="55%" />
 * Evaluation rollouts
+  |                   | DQN               | CQL               | AWAC              | IQL               |
+  |:------------------|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
+  | offline training  |[![off_hard_dqn_0]][off_hard_dqn] |[![off_hard_cql0.1_0]][off_hard_cql0.1] |[![off_hard_awac10.0_0]][off_hard_awac10.0] |[![off_hard_iql0.99_0]][off_hard_iql0.99] |
+  | online finetuning |[![on_hard_dqn_0]][on_hard_dqn]   |[![on_hard_cql0.1_0]][on_hard_cql0.1]   |[![on_hard_awac10.0_0]][on_hard_awac10.0]   |[![on_hard_iql0.99_0]][on_hard_iql0.99]   |
+  
+  With online fine-tuning, the performance can get further improvement.
 
 ### Bonus Problem
+I also try extra mazes. ：）
 
 ## Reference
 
@@ -127,4 +138,21 @@ I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training a
 [off_hard_cql_10000]: results/offline_hard_cql0.1_exploresteps=10000.png
 [off_hard_cql_20000]: results/offline_hard_cql0.1_exploresteps=20000.png
 
+[off_hard_dqn_0]: results/offline_hard_dqn_0.png
+[off_hard_cql0.1_0]: results/offline_hard_cql0.1_0.png
+[off_hard_awac10.0_0]: results/offline_hard_awac10.0_0.png
+[off_hard_iql0.99_0]: results/offline_hard_iql0.99_temp10.0_0.png
+[off_hard_dqn]: results/offline_hard_dqn.png
+[off_hard_cql0.1]: results/offline_hard_cql0.1.png
+[off_hard_awac10.0]: results/offline_hard_awac10.0.png
+[off_hard_iql0.99]: results/offline_hard_iql0.99_temp10.0.png
+
+[on_hard_dqn_0]: results/finetune_hard_dqn_0.png
+[on_hard_cql0.1_0]: results/finetune_hard_cql0.1_0.png
+[on_hard_awac10.0_0]: results/finetune_hard_awac10.0_0.png
+[on_hard_iql0.99_0]: results/finetune_hard_iql0.99_temp10.0_0.png
+[on_hard_dqn]: results/finetune_hard_dqn.png
+[on_hard_cql0.1]: results/finetune_hard_cql0.1.png
+[on_hard_awac10.0]: results/finetune_hard_awac10.0.png
+[on_hard_iql0.99]: results/finetune_hard_iql0.99_temp10.0.png
 
