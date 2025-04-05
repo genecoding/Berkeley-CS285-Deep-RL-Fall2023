@@ -11,7 +11,7 @@
   * [x] 
 
 ## Troubleshooting
-In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I had tried `use_reward` flag, didn't work...
+In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I tried `use_reward` flag, didn't work...
 
 ## Result
 ### 3 Exploration
@@ -61,26 +61,31 @@ total_steps = 10000
     |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
     |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   * Learning curves  
-    <img src="results/hard_data ablation.png" width="55%" />
+    <img src="results/hard_data ablation.png" width="55%" />  
+    When the maze becomes difficult, the agent struggles to reach the goal with only offline training; but by using larger dataset, the situation can be improved.
   * Evalution rollouts  
     (It's total_steps of exploration, i.e., the size of dataset.)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
     |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
     |[![off_hard_cql_1000_0]][off_hard_cql_1000] |[![off_hard_cql_5000_0]][off_hard_cql_5000] |[![off_hard_cql_10000_0]][off_hard_cql_10000] |[![off_hard_cql_20000_0]][off_hard_cql_20000] |
     
-    When the maze becomes difficult, the agent struggles to reach the goal with only offline training; but by using larger dataset, the situation can be improved.
-
 ### 5 Online Fine-Tuning
 I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training and online finetuning.
 * Learning curves  
-  <img src="results/hard_finetune.png" width="55%" />
+  Offline Training vs. Online Finetuning (including comparison of DQN, CQL, AWAC and IQL)  
+  <img src="results/hard_finetune.png" width="55%" />  
+  With online finetuning, the performance can be further improved.
 * Evaluation rollouts
   |                   | DQN               | CQL               | AWAC              | IQL               |
   |:------------------|:-----------------:|:-----------------:|:-----------------:|:-----------------:|
   | offline training  |[![off_hard_dqn_0]][off_hard_dqn] |[![off_hard_cql0.1_0]][off_hard_cql0.1] |[![off_hard_awac10.0_0]][off_hard_awac10.0] |[![off_hard_iql0.99_0]][off_hard_iql0.99] |
   | online finetuning |[![on_hard_dqn_0]][on_hard_dqn]   |[![on_hard_cql0.1_0]][on_hard_cql0.1]   |[![on_hard_awac10.0_0]][on_hard_awac10.0]   |[![on_hard_iql0.99_0]][on_hard_iql0.99]   |
+* Last 10000 steps during finetune training
+  | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
+    |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
+    |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   
-  With online fine-tuning, the performance can get further improvement.
+  
 
 ### Bonus Problem
 I also try extra mazes. ：）
@@ -155,4 +160,4 @@ I also try extra mazes. ：）
 [on_hard_cql0.1]: results/finetune_hard_cql0.1.png
 [on_hard_awac10.0]: results/finetune_hard_awac10.0.png
 [on_hard_iql0.99]: results/finetune_hard_iql0.99_temp10.0.png
-
+[last_hard_dqn]: exploration_visualization/finetune_PointmassHard-v0_dqn.png
