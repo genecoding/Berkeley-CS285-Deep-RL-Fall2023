@@ -19,11 +19,31 @@ In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* 
 |:-----------------|:----------------:|:----------------:|:----------------:|
 | Random           |![random_easy]    |![random_medium]  |![random_hard]    |
 | RND              |![rnd_easy]       |![rnd_medium]     |![rnd_hard]       |
+
 ### 4 Offline RL
 * 4.1 CQL
+  * Run DQN and CQL on Easy and Medium.
+    (see 4.2)
+  * On the Medium environment, create several experiment variations in which the value of the α parameter is varied, from α = 0 (equivalent to DQN) to α = 10.  
+    I try `α = 0.01, 1, 5, 10`. (default α = 0.1)
+    * Learning curves
+    * Evaluation rollouts
 * 4.2 Policy Constraint Methods: IQL and AWAC
+  * Learning curves
+    Comparison of DQN, CQL, AWAC and IQL
+    * Easy
+    * Medium
+  * Evaluation rollouts
+    * Easy
+    * Medium
 * 4.3 Data Ablations
+  I run on Hard.
+  * Exploration (with RND)
+  * Learning curves
+  * Evalution rollouts
+
 ### 5 Online Fine-Tuning
+I run DQN, CQL, AWAC and IQL on Hard, and compare offline training and online finetuning.
 ### Bonus Problem
 
 ## Reference
