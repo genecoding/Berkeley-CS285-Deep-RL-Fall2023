@@ -4,9 +4,9 @@
 
 ## Note
 * Implemented algorithms:
-  * [x] 
-  * [x] 
-  * [x] 
+  * [x] MPC (Model Predictive Control)
+  * [x] CEM (Cross-Entropy Method)
+  * [x] MBPO (Model-Based Policy Optimization)
 
 ## Result
 * Problem 1  
@@ -46,14 +46,14 @@
   * Evaluation rollouts
     | cem_num_iters = 2               | cem_num_iters = 4               |
     |:-------------------------------:|:-------------------------------:|
-    |![cheetah_cem_cemnumiters=2]     |![cheetah_cem_cemnumiters=2]     |
+    |![cheetah_cem_cemnumiters=2]     |![cheetah_cem_cemnumiters=4]     |
 * Problem 6
   * Learning curves  
     <img src="results/problem6.png" width="55%" />
   * Evaluation rollouts
-    | Model-free SAC baseline mbpo_rollout_length = 0 | Dyna-like algorithm mbpo_rollout_length = 1 | MBPO mbpo_rollout_length = 10 |
-    |:----------------:|:----------------:|:-----------------:|
-    |![cheetah_mbpo_rolloutlen=0]     |![cheetah_mbpo_rolloutlen=1]          |![cheetah_mbpo_rolloutlen=10]    |
+    | Model-free SAC baseline mbpo_rollout_length = 0 | Dyna-like algorithm mbpo_rollout_length = 1 | MBPO<br> mbpo_rollout_length = 10 |
+    |:-----------------------------------------------:|:-------------------------------------------:|:---------------------------------:|
+    |![cheetah_mbpo_rolloutlen=0]                     |![cheetah_mbpo_rolloutlen=1]                 |![cheetah_mbpo_rolloutlen=10]      |
 
 ## Reference
 
