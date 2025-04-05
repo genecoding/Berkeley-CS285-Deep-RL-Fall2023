@@ -56,6 +56,9 @@
     |![cheetah_mbpo_rolloutlen=0]                     |![cheetah_mbpo_rolloutlen=1]                 |![cheetah_mbpo_rolloutlen=10]      |
 
 ## Reference
+* [Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning], A Nagabandi *et al.*
+* [Deep Dynamics Models for Learning Dexterous Manipulation], A Nagabandi *et al.*
+* [When to Trust Your Model: Model-Based Policy Optimization], M Janner *et al.*
 
 
 
@@ -72,3 +75,6 @@
 [cheetah_mbpo_rolloutlen=0]: results/cheetah_mbpo_rolloutlen=0.gif
 [cheetah_mbpo_rolloutlen=1]: results/cheetah_mbpo_rolloutlen=1.gif
 [cheetah_mbpo_rolloutlen=10]: results/cheetah_mbpo_rolloutlen=10.gif
+[Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning]: https://arxiv.org/pdf/1708.02596
+[Deep Dynamics Models for Learning Dexterous Manipulation]: https://arxiv.org/pdf/1909.11652
+[When to Trust Your Model: Model-Based Policy Optimization]: https://arxiv.org/pdf/1906.08253
