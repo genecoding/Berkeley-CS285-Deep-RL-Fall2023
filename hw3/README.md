@@ -70,13 +70,13 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
   * (Testing) Entropy during the critic updates. (smoothing: 0.85)  
     <img src="results/312.png" width="55%" />
 * 3.1.3 Actor with REINFORCE
-  * (Testing) Train an agent on InvertedPendulum-v4 using sanity_invertedpendulum_reinforce.yaml.  
+  * (Testing) Train an agent on InvertedPendulum-v4 with REINFORCE.  
     <img src="results/313_invpendulum.png" width="55%" />
   * Train an agent on HalfCheetah-v4 using halfcheetah_reinforce1.yaml.
   * Train another agent with halfcheetah_reinforce10.yaml.  
     (see 3.1.4)
 * 3.1.4 Actor with REPARAMETRIZE
-  * (Testing) Make sure you can solve InvertedPendulum-v4 using sanity_invertedpendulum_reparametrize.yaml.  
+  * (Testing) Train an agent on InvertedPendulum-v4 with REPARAMETRIZE.  
     <img src="results/314_invpendulum.png" width="55%" />
   * Train (once again) on HalfCheetah-v4 with halfcheetah_reparametrize.yaml.  
     Comparison of REINFORCE-1, REINFORCE-10 and REPARAMETRIZE  
