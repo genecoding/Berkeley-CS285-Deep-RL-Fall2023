@@ -26,7 +26,7 @@
       <img src="results/exp2_baseline loss.png" width="48%" />
     * Comparison of decreased bgs & blr  
       <img src="results/exp2_bgs-blr eval.png" width="48%" />
-      <img src="results/exp2_bgs-blr loss.png" width="48%" />
+      <img src="results/exp2_bgs-blr loss.png" width="48%" />  
       The default setting of baseline is: `bgs = 5, blr = 0.01`, i.e., the setting of the light blue and the pink one are the same. The difference is caused by randomness.
     * Without NA vs. NA  
       <img src="results/exp2_na eval.png" width="48%" />
