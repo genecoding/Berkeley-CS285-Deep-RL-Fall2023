@@ -4,9 +4,9 @@
 
 ## Note
 * Implemented algorithms:
-  * [x] MPC (Model Predictive Control)
-  * [x] CEM (Cross-Entropy Method)
-  * [x] MBPO (Model-Based Policy Optimization)
+  * [x] Model Predictive Control (MPC)
+  * [x] Cross-Entropy Method (CEM)
+  * [x] Model-Based Policy Optimization (MBPO)
 
 ## Result
 * Problem 1  
