@@ -97,6 +97,10 @@ I also try extra mazes. ：）
 For detailed results, see [here].
 
 ## Reference
+* [Exploration by Random Network Distillation], Y Burda *et al.*
+* [Conservative Q-Learning for Offline Reinforcement Learning], A Kumar *et al.*
+* [AWAC: Accelerating Online Reinforcement Learning with Offline Datasets], A Nair *et al.*
+* [Offline Reinforcement Learning with Implicit Q-Learning], I Kostrikov *et al.*
 
 
 
@@ -186,5 +190,10 @@ For detailed results, see [here].
 [on_galton_iql]: results/finetune_veryhard-galton_iql0.99_temp10.0.png
 [on_spiral11x11_iql]: results/finetune_veryhard-spiral11x11_iql0.99_temp10.0.png
 [on_maze11x11_iql]: <results/finetune_veryhard-maze11x11_iql0.99_temp10.0 (510k).png>
-[on_umulti_iql]: <results/finetune_veryhard-umulti_iql0.99_temp10.0 (950k)_0.png>
+[on_umulti_iql]: <results/finetune_veryhard-umulti_iql0.99_temp10.0 (950k).png>
 [on_tunnel_iql]: results/finetune_veryhard-tunnel_iql0.99_temp10.0.png
+
+[Exploration by Random Network Distillation]: https://arxiv.org/abs/1810.12894
+[Conservative Q-Learning for Offline Reinforcement Learning]: https://arxiv.org/abs/2006.04779
+[AWAC: Accelerating Online Reinforcement Learning with Offline Datasets]: https://arxiv.org/abs/2006.09359
+[Offline Reinforcement Learning with Implicit Q-Learning]: https://arxiv.org/abs/2110.06169
