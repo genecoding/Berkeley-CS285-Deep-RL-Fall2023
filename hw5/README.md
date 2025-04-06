@@ -192,6 +192,7 @@ For detailed results, see [here].
 [on_maze11x11_iql]: <results/finetune_veryhard-maze11x11_iql0.99_temp10.0 (510k).png>
 [on_umulti_iql]: <results/finetune_veryhard-umulti_iql0.99_temp10.0 (950k).png>
 [on_tunnel_iql]: results/finetune_veryhard-tunnel_iql0.99_temp10.0.png
+[here]: extra_mazes.md
 
 [Exploration by Random Network Distillation]: https://arxiv.org/abs/1810.12894
 [Conservative Q-Learning for Offline Reinforcement Learning]: https://arxiv.org/abs/2006.04779
