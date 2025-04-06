@@ -90,7 +90,7 @@ I also try extra mazes. ：）
 |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
 |[![on_flytrapsmall_iql_0]][on_flytrapsmall_iql] |[![on_tree_iql_0]][on_tree_iql] |[![on_flytrapbig_iql_0]][on_flytrapbig_iql] |[![on_galton_iql_0]][on_galton_iql] |
 
-| Spiral 11x11         | Maze 11x11           | UMulti                   | Tunnel                 |
+| Spiral 11x11           | Maze 11x11             | U Multi                | Tunnel                 |
 |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
 |[![on_spiral11x11_iql_0]][on_spiral11x11_iql] |[![on_maze11x11_iql_0]][on_maze11x11_iql] |[![on_umulti_iql_0]][on_umulti_iql] |[![on_tunnel_iql_0]][on_tunnel_iql] |
 
