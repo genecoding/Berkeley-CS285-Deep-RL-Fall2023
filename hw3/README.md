@@ -117,7 +117,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
 [spaceinvaders_lr1e-3]: results/doubleq_spaceinvaders_lr1e-3.gif
 [spaceinvaders_lr5e-3]: results/doubleq_spaceinvaders_lr5e-3.gif
 [spaceinvaders_lr1e-4]: results/doubleq_spaceinvaders_lr1e-4.gif
-[spaceinvaders_lr5e-4]: results/doubleq_spaceinvaders_lr1e-4.gif
+[spaceinvaders_lr5e-4]: results/doubleq_spaceinvaders_lr5e-4.gif
 [humanoid]: results/humanoid.gif
 [humanoid_redq]: results/humanoid_redq.gif
 [Randomized Ensembled Double Q-Learning: Learning Fast Without a Model]: https://arxiv.org/abs/2101.05982
