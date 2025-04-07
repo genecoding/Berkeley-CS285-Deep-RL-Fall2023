@@ -11,7 +11,7 @@
 ## Result
 * Problem 1  
   The default setting is: `lr = 0.001, num_layers = 1`.
-  | default          | lr = 0.01        | numlayers = 3    |
+  | default          | lr = 0.01        | num_layers = 3   |
   |:----------------:|:----------------:|:----------------:|
   |![p1_default]     |![p1_lr]          |![p1_numlayers]   |
 * Problem 2  
