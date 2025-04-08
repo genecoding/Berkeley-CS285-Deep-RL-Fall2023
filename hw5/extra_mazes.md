@@ -2,14 +2,14 @@
 * I try extra mazes which are: `'FlyTrapSmall', 'Tree', 'Spiral11x11', 'FlyTrapBig', 'Galton', 'Maze11x11', 'UMulti', 'Tunnel'`.
 * I finetune `IQL` on these mazes and by results divide them into 3 groups, each has a set of hyperparameters. I also run `DQN` for comparison.
 * Mazes in the 3rd group are more complex and the randomness is fixed in this homework, so the agent might not perform well at the last evaluation, so I train it with longer online training and pick some good evaluations over the training.
-* I had also finetuned CQL and AWAC on these mazes, some results look good and some need more finetuning; since there are too many hyperparameters and I had already spent too much time on this, I decided to stop here.
+* I had also finetuned CQL and AWAC on these mazes, got some results look good and some need more finetuning; since there are a lot of hyperparameters and I had already spent too much time on this, I decided to stop here.
 * Try it and have fun. :blush:  
 
 ### Exploration
 ```python
 total_steps = 20000
 ```
-* Exploration (RND) / Last 20000 steps during finetune training of DQN & IQL
+* Exploration (RND) / Last 20000 steps during finetune training of DQN and IQL
   |                     | RND                 | DQN                 | IQL                 |
   |:--------------------|:-------------------:|:-------------------:|:-------------------:|
   | FlyTrapSmall        |![rnd_flytrapsmall]  |![dqn_flytrapsmall]  |![iql_flytrapsmall]  |
@@ -21,7 +21,7 @@ total_steps = 20000
   | UMulti              |![rnd_umulti]        |![dqn_umulti]        |![iql_umulti]        |
   | Tunnel              |![rnd_tunnel]        |![dqn_tunnel]        |![iql_tunnel]        |
 
-  If training succeeds, a path from the start to the goal would be emerged from trajectories of the agent.
+  If learning is successful, a path from the start to the goal would be emerged from trajectories of the agent.
   
 ### Group1
 ```python
