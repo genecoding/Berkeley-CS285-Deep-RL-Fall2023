@@ -35,7 +35,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
   * Run three more seeds of the lunar lander problem.
     * Learning curves  
       <img src="results/dqn_lunarlander_doubleq.png" width="55%" />  
-      Double Q-Learning shows more stablility.
+      Double Q-Learning shows more stability.
     * Evaluation rollouts
       | s1                       | s2                       | s3                        |
       |:------------------------:|:------------------------:|:-------------------------:|
@@ -45,11 +45,11 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       Eval Return vs. Train Return (smoothing: 0.85)  
       <img src="results/dqn_mspacman eval return.png" width="48%" />
       <img src="results/dqn_mspacman train return.png" width="48%" />  
-      Since the agent tends to take random actions at early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
+      Since the agent tends to take random actions at an early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
     * Evaluation rollouts  
       ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
-  I choose `Space Invaders` and run with `learining rate = 1e-3, 5e-3, 1e-4, 5e-4`.  
+  I choose `Space Invaders` and run with `learning rate = 1e-3, 5e-3, 1e-4, 5e-4`.  
   * Learning curves  
     <img src="results/dqn_space invaders.png" width="55%" />  
     `lr = 1e-4` works best here.
