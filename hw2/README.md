@@ -43,7 +43,7 @@
     |:----------------:|
     |![exp3]           |
 * Experiment 4 (InvertedPendulum)  
-  Use tuned hyperparemeters:
+  Use tuned hyperparameters:
   ```python
   baseline_gradient_steps = 10
   gae_lambda = 0.98
