@@ -49,7 +49,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
     * Evaluation rollouts  
       ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
-  I choose `Space Invaders` and run with `learning rate = 1e-3, 5e-3, 1e-4, 5e-4`.  
+  I choose `SpaceInvaders` and run with `learning rate = 1e-3, 5e-3, 1e-4, 5e-4`.  
   * Learning curves  
     <img src="results/dqn_space invaders.png" width="55%" />  
     `lr = 1e-4` works best here.
