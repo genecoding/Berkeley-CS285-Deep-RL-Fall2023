@@ -10,7 +10,7 @@
   * [x] Implicit Q-Learning (IQL)
 
 ## Troubleshooting
-In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I had tried `use_reward` flag but it didn't work...
+In `run_hw5_finetune.py`, use normal rewards when updating the agent: remove `* (1 if config.get("use_reward", False) else 0)`. I tried `use_reward` flag but it didn't work.
 
 ## Result
 ### 3 Exploration
@@ -33,7 +33,7 @@ total_steps = 10000
       <img src="results/medium_cql alpha.png" width="55%" />
       <img src="results/medium_cql alpha qvalue.png" width="55%" />
     * Evaluation rollouts  
-      **(click pictures to see all evalutions)**
+      **(click pictures to see all evaluations)**
       | α = 0.01                               | α = 1                                  | α = 5                                  | α = 10                                 |
       |:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|:--------------------------------------:|
       |[![off_med_cql0.01_0]][off_med_cql0.01] |[![off_med_cql1.0_0]][off_med_cql1.0]   |[![off_med_cql5.0_0]][off_med_cql5.0]   |[![off_med_cql10.0_0]][off_med_cql10.0] |
@@ -61,9 +61,9 @@ total_steps = 10000
     |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   * Learning curves  
     <img src="results/hard_data ablation.png" width="55%" />  
-    When the maze becomes difficult, the agent struggles to reach the goal with only offline training. By using larger dataset, the situation can be improved though...
+    When the maze becomes difficult, the agent struggles to reach the goal with only offline training. By using larger datasets, the situation can be improved though...
   * Evalution rollouts  
-    (It's total_steps of exploration, i.e., the size of dataset.)
+    (It's total_steps of exploration, i.e., the size of the dataset.)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
     |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
     |[![off_hard_cql_1000_0]][off_hard_cql_1000] |[![off_hard_cql_5000_0]][off_hard_cql_5000] |[![off_hard_cql_10000_0]][off_hard_cql_10000] |[![off_hard_cql_20000_0]][off_hard_cql_20000] |
