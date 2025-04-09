@@ -22,7 +22,7 @@ total_steps = 20000
   | UMulti              |![rnd_umulti]        |![dqn_umulti]        |![iql_umulti]        |
   | Tunnel              |![rnd_tunnel]        |![dqn_tunnel]        |![iql_tunnel]        |
 
-  If learning is successful, a path from the start to the goal would be emerged from trajectories of the agent.
+  If learning is successful, a path from the start to the goal would emerge from trajectories of the agent.
   
 ### Group1
 ```python
