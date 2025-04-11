@@ -21,15 +21,15 @@
   * Learning curves  
     <img src="results/problem3.png" width="55%" />
   * Evaluation rollouts
-    | obstacles        |
+    | Obstacles        |
     |:----------------:|
     |![obstacles]      |
     
-    | reacher          |
+    | Reacher          |
     |:----------------:|
     |![reacher]        |
 
-    | halfcheetah      |
+    | HalfCheetah      |
     |:----------------:|
     |![cheetah]        |
 * Problem 4  
