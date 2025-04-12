@@ -86,11 +86,11 @@ I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training a
   
 ### Bonus Problem
 I also try extra mazes. ：）
-| Fly Trap Small         | Tree                   | Fly Trap Big           | Galton                 |
+| FlyTrapSmall         | Tree                   | FlyTrapBig           | Galton                 |
 |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
 |[![on_flytrapsmall_iql_0]][on_flytrapsmall_iql] |[![on_tree_iql_0]][on_tree_iql] |[![on_flytrapbig_iql_0]][on_flytrapbig_iql] |[![on_galton_iql_0]][on_galton_iql] |
 
-| Spiral 11x11           | Maze 11x11             | U Multi                | Tunnel                 |
+| Spiral11x11           | Maze11x11             | UMulti                | Tunnel                 |
 |:----------------------:|:----------------------:|:----------------------:|:----------------------:|
 |[![on_spiral11x11_iql_0]][on_spiral11x11_iql] |[![on_maze11x11_iql_0]][on_maze11x11_iql] |[![on_umulti_iql_0]][on_umulti_iql] |[![on_tunnel_iql_0]][on_tunnel_iql] |
 
