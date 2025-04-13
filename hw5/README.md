@@ -61,7 +61,7 @@ total_steps = 10000
     |![4-3_totalsteps=1000]   |![4-3_totalsteps=5000]   |![4-3_totalsteps=10000]  |![4-3_totalsteps=20000]  |
   * Learning curves  
     <img src="results/hard_data ablation.png" width="55%" />  
-    When the maze becomes difficult, the agent struggles to reach the goal with only offline training. By using larger datasets, the situation can be improved though...
+    When the maze becomes difficult, the agent struggles to reach the goal with only offline training. By using a larger dataset, the situation can be improved though...
   * Evalution rollouts  
     (It's total_steps of exploration, i.e., the size of the dataset.)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
