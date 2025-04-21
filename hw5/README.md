@@ -54,7 +54,7 @@ total_steps = 10000
       |:--------------------------------:|:--------------------------------------:|:------------------------------------------:|:----------------------------------------:|
       |[![off_med_dqn_0]][off_med_dqn]   |[![off_med_cql0.1_0]][off_med_cql0.1]   |[![off_med_awac10.0_0]][off_med_awac10.0]   |[![off_med_iql0.99_0]][off_med_iql0.99]   |
 * 4.3 Data Ablations  
-  I run on Hard environment.
+  I run on `Hard` environment.
   * Exploration (with RND)
     | total_steps = 1000      | total_steps = 5000      | total_steps = 10000     | total_steps = 20000     |
     |:-----------------------:|:-----------------------:|:-----------------------:|:-----------------------:|
@@ -69,7 +69,7 @@ total_steps = 10000
     |[![off_hard_cql_1000_0]][off_hard_cql_1000] |[![off_hard_cql_5000_0]][off_hard_cql_5000] |[![off_hard_cql_10000_0]][off_hard_cql_10000] |[![off_hard_cql_20000_0]][off_hard_cql_20000] |
     
 ### 5 Online Fine-Tuning
-I run DQN, CQL, AWAC and IQL on Hard environment, and compare offline training and online finetuning.
+I run `DQN, CQL, AWAC` and `IQL` on Hard environment, and compare offline training and online finetuning.
 * Learning curves  
   Offline Training vs. Online Finetuning (including comparison of DQN, CQL, AWAC and IQL)  
   <img src="results/hard_finetune.png" width="55%" />  
