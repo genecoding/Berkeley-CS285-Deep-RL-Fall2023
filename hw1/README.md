@@ -24,7 +24,6 @@
     (x-axis: iterations)  
     <img src="results/eval.png" width="48%" />
     <img src="results/train.png" width="48%" />
-
 * Evaluation rollouts
   |                  | Behavior Cloning | DAgger            |
   |:-----------------|:----------------:|:-----------------:|
