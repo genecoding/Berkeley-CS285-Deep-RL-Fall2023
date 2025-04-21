@@ -45,7 +45,7 @@ Fix two bugs in `MemoryEfficientReplayBuffer`.
       Eval Return vs. Train Return (smoothing: 0.85)  
       <img src="results/dqn_mspacman eval return.png" width="48%" />
       <img src="results/dqn_mspacman train return.png" width="48%" />  
-      Since the agent tends to take random actions at an early stage, the train return and eval return might look very different early in training. (In this training, the difference looks not so different?)
+      Since the agent tends to take random actions at an early stage, the train return and eval return might look very different early in training.
     * Evaluation rollouts  
       ![mspacman]
 * 2.6 Experimenting with Hyperparameters  
