@@ -1,6 +1,6 @@
 # Homework 4
 * [Homework4]
-* For detailed execution commands, see [run_hw4.ipynb].
+* For detailed executions, see [run_hw4.ipynb].
 
 ## Note
 * Implemented algorithms:
