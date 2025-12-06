@@ -1,6 +1,6 @@
 # Homework 3
 * [Homework3]
-* For detailed execution commands, see [run_hw3_dqn.ipynb] and [run_hw3_sac.ipynb].
+* For detailed executions, see [run_hw3_dqn.ipynb] and [run_hw3_sac.ipynb].
 
 ## Note
 * Implemented algorithms:
