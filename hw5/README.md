@@ -1,6 +1,6 @@
 # Homework 5
 * [Homework5]
-* For detailed execution commands, see [run_hw5.ipynb].
+* For detailed executions, see [run_hw5.ipynb].
 
 ## Note
 * Implemented algorithms:
